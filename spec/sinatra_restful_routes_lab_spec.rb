@@ -119,10 +119,11 @@ describe "Recipe App" do
 
   describe "creating a new recipe" do 
     before do 
-      params = {
+      params = { "recipe" => {
         "name" => "pumpkin pie",
         "ingredients" => "pumpkin, flour, butter, sugar",
         "cook_time" => "1 hour"
+        }
       }
       post '/recipes', params
       follow_redirect!

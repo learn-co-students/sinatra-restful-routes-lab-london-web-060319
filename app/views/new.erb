@@ -1,0 +1,14 @@
+<h1>Recipe NEW!</h1>
+
+<form action="/recipes" method="post">
+    <label for="recipe_name">Recipe Name: </label>
+    <input type="text" name="recipe[name]" id="name" required>
+
+    <label for="ingredients">Ingredients: </label>
+    <input type="text" name="recipe[ingredients]" id="ingredients" required>
+
+    <label for="time">Cooking Time: </label>
+    <input type="text" name="recipe[cook_time]" id="cook_time" required>
+
+    <input type="submit" value="Submit!">
+</form>
